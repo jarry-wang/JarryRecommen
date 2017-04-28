@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/recommend/index",
+    "pages/play/index",
+     "pages/vedio/index",
+    "pages/my/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4FCEDC",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#4FCEDC",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/recommend/index",
+      "text": "推荐音乐",
+      "iconPath": "images/icon_footer_home_unselected.png",
+      "selectedIconPath": "images/icon_footer_home_selected.png"
+    },{
+      "pagePath": "pages/vedio/index",
+      "text": "视频",
+      "iconPath": "images/icon_footer_hot_unselected.png",
+      "selectedIconPath": "images/icon_footer_hot_selected.png"
+    }]
+  }
+}

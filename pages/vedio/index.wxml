@@ -1,0 +1,4 @@
+<!--pages/vedio/index.wxml-->
+<view class="container" style="text-align:center;">
+<text class="wait-name">敬请期待</text>
+</view>

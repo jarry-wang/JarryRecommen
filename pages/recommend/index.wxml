@@ -1,0 +1,29 @@
+<swiper autoplay>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item.image._url}}" class="slide-image" mode="aspectFill"/>
+    </swiper-item>
+  </block>
+</swiper>
+<scroll-view scroll-y="true" class="container">
+	<block wx:for="{{recommendsList}}" wx:for-item="song">
+		<view class="block" bindtap="playTap" data-id="{{song.objectId}}">
+			<view class="left">
+				<image src="{{song.image._url}}" mode="aspectFill"/>
+			</view>
+			<view class="right">
+				<view class="content">
+					<view>
+						<text class="song-name">{{song.name}}</text>	
+					</view>
+					<view>
+						<text class="song-artists">{{song.singerName}}</text>
+					</view>
+				</view>
+				<view class="play">
+					<image src="../../images/more.png" mode="scaleToFill"/>
+				</view>
+			</view>
+		</view>	
+	</block>
+</scroll-view>
